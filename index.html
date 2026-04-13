@@ -2,35 +2,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Player Profile</title>
+  <title>Profile</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header class="top-bar">
-  <div class="profile">
-    <div class="commit-circle">Committed</div>
-    <h1>Your Name</h1>
-    <p>@yourhandle</p>
-    <p>City, State</p>
-    <p>Height | Weight | Position</p>
-    <p>School Name</p>
+<!-- Top Navbar -->
+<div class="navbar">
+  <h2>BaseballGram</h2>
+</div>
+
+<!-- Profile Header -->
+<div class="profile-header">
+  <div class="avatar"></div>
+
+  <div class="profile-info">
+    <div class="top-row">
+      <h2>yourname</h2>
+      <div class="commit-circle">D1</div>
+    </div>
+
+    <div class="stats">
+      <span><b>12</b> posts</span>
+      <span><b>1.2k</b> followers</span>
+      <span><b>350</b> following</span>
+    </div>
+
+    <div class="bio">
+      <p><b>Your Name</b></p>
+      <p>Position | Height | Weight</p>
+      <p>School • City, State</p>
+    </div>
   </div>
-</header>
+</div>
 
-<section class="posts">
-  <h2>Posts</h2>
-  <div class="post">Post 1</div>
-  <div class="post">Post 2</div>
-</section>
+<!-- Tabs -->
+<div class="tabs">
+  <button class="active">Posts</button>
+  <button onclick="location.href='tagged.html'">Tagged</button>
+</div>
 
-<section class="videos">
-  <h2>Video Gallery</h2>
+<!-- Posts Grid -->
+<div class="grid">
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+</div>
+
+<!-- Videos Section -->
+<div class="videos">
+  <h3>Highlight Videos</h3>
   <video controls src="video1.mp4"></video>
   <video controls src="video2.mp4"></video>
-  <br>
   <a href="rankings.html" class="button">Rankings - Click Here</a>
-</section>
+</div>
 
 </body>
 </html>
