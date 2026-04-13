@@ -1,37 +1,39 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: #fafafa;
+
+.bio p {
+  margin: 2px 0;
 }
 
-.top-bar {
-  text-align: center;
-  padding: 20px;
+.tabs {
+  display: flex;
+  justify-content: center;
   background: white;
+  border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
 }
 
-.commit-circle {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background: #3897f0;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 10px;
-}
-
-.posts {
-  padding: 20px;
-}
-
-.post {
+.tabs button {
+  flex: 1;
+  padding: 10px;
+  border: none;
   background: white;
-  padding: 15px;
-  margin-bottom: 10px;
-  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.tabs .active {
+  border-bottom: 2px solid black;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.grid-item {
+  width: 100%;
+  padding-top: 100%;
+  background: #ddd;
 }
 
 .videos {
@@ -41,35 +43,25 @@ body {
 
 video {
   width: 100%;
-  max-width: 400px;
-  display: block;
   margin-bottom: 10px;
 }
 
 .button {
   display: inline-block;
-  padding: 10px 15px;
+  padding: 10px;
   background: #3897f0;
   color: white;
   text-decoration: none;
   margin-top: 10px;
 }
 
-.rankings-top {
+.rank-card {
   padding: 20px;
   background: white;
+  text-align: center;
+  margin: 10px;
 }
 
 .description {
   padding: 20px;
-}
-
-.gallery {
-  display: flex;
-  gap: 10px;
-  padding: 20px;
-}
-
-.gallery img {
-  width: 30%;
 }
